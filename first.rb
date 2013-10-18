@@ -5,11 +5,11 @@ require 'wongi-engine'
 
 engine = Wongi::Engine.create
 
-engine << [ "Alice", "friend", "Bob" ]
-engine << [ "Bob", "friend", "John" ]
-engine << [ "John", "friend", "Alice" ]
+engine << ["Alice", "friend", "Bob"]
+engine << ["Bob", "friend", "John"]
+engine << ["John", "friend", "Alice"]
 
-engine << [ "Alice", "age", 35 ]
+engine << ["Alice", "age", 35]
 
 
 ###
@@ -18,7 +18,7 @@ engine << [ "Alice", "age", 35 ]
 #:_ matches anithing
 #'each' takes three arguments for every field of a triple and tries to match the resulting template against the known facts.
 engine.each "Alice", :_, :_ do |item|
-    puts "Alice's #{item.predicate} is #{item.object}"
+  puts "Alice's #{item.predicate} is #{item.object}"
 end
 
 
@@ -43,6 +43,5 @@ end
 # A token represents all facts that passed the rule's conditions.
 # If you think of the dataset as of a long SQL table being joined with itself, then a token is like a row in the resulting table.
 friends.tokens.each do |token|
- #puts token
-    puts "%s and %s are friends" % [ token[:PersonA], token[:PersonB ]]
+  puts "#{token[:PersonA]} and #{token[:PersonB]} are friends" # The same: puts "%s and %s are friends" % [ token[:PersonA], token[:PersonB ]]   #
 end
