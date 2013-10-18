@@ -1,0 +1,10 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    wongi-engine (0.0.10)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  wongi-engine
