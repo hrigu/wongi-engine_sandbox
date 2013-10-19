@@ -15,7 +15,7 @@ engine << ["Alice", "age", 35]
 ###
 # Simple iteration
 ###
-#:_ matches anithing
+#:_ matches anything
 #'each' takes three arguments for every field of a triple and tries to match the resulting template against the known facts.
 engine.each "Alice", :_, :_ do |item|
   puts "Alice's #{item.predicate} is #{item.object}"
