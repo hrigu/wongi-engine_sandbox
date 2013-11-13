@@ -1,6 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    ruby-prolog (1.0.1)
     rubylog (2.1.0)
     wongi-engine (0.0.10)
 
@@ -8,5 +9,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  ruby-prolog
   rubylog (~> 2.1)
   wongi-engine
