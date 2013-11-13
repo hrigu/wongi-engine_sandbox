@@ -1,10 +1,12 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    rubylog (2.1.0)
     wongi-engine (0.0.10)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  rubylog (~> 2.1)
   wongi-engine
